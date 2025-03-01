@@ -160,3 +160,16 @@ math-learning-notes-content/
 .claude/
 .pi/
 meta/
+
+# Propagated tooling (unrelated to math content)
+propagated/
+
+# AI-Prompting-Library artifact
+.cleanup-protect
+
+# Redundant markdown copies (source of truth is .ipynb)
+archive/markdown/
+
+# Hugo build artifacts (keep ignored even though site is removed)
+content/
+.hugo_build.lock
