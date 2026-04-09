@@ -212,36 +212,34 @@ The `translated-notebooks` directory contains Chinese translations of various no
 
 ##### Combinatorics (组合学)
 
-| Note                                                                      | Description                                                          |
-| ------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| [二项展开式.ipynb](translated-notebooks/离散数学/组合学/二项展开式.ipynb) | 二项展开式公式与应用 (Binomial expansion formulas and applications)  |
-| [排列与组合.ipynb](translated-notebooks/离散数学/组合学/排列与组合.ipynb) | 排列与组合概念 (Permutation and combination concepts)                |
-| [杨辉三角.ipynb](translated-notebooks/离散数学/组合学/杨辉三角.ipynb)     | 杨辉三角的性质与应用 (Pascal's triangle properties and applications) |
+| Notebook | Description |
+|----------|-------------|
+| [二项展开式.ipynb](translated-notebooks/离散数学/组合学/二项展开式.ipynb) | 二项展开式公式与应用 (Binomial expansion formulas and applications) |
+| [排列与组合.ipynb](translated-notebooks/离散数学/组合学/排列与组合.ipynb) | 排列与组合概念 (Permutation and combination concepts) |
+| [杨辉三角.ipynb](translated-notebooks/离散数学/组合学/杨辉三角.ipynb) | 杨辉三角的性质与应用 (Pascal's triangle properties and applications) |
 
 ##### Series and Sequences (数列与级数)
 
-| Note                                                                                                                                   | Description                                                                                 |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [三角形数与之求和.ipynb](translated-notebooks/离散数学/数列与级数/三角形数与之求和.ipynb)                                              | 三角形数及其求和公式 (Triangular numbers and their sum formulas)                            |
-| [等比数列求和.ipynb](translated-notebooks/离散数学/数列与级数/等比数列求和.ipynb)                                                      | 几何级数概念与公式 (Geometric series concepts and formulas)                                 |
-| [奇数之和是平方数.ipynb](translated-notebooks/离散数学/数列与级数/奇数之和是平方数.ipynb)                                              | 奇数之和等于平方数的证明 (Proof that sum of odd numbers equals perfect squares)             |
-| [偶数之和.ipynb](translated-notebooks/离散数学/数列与级数/偶数之和.ipynb)                                                              | 偶数之和公式 (Formulas for sum of even numbers)                                             |
-| [等差数列至奇数乃偶数之求和.ipynb](translated-notebooks/离散数学/数列与级数/等差数列求和/等差数列至奇数乃偶数之求和.ipynb)             | 正整数之和为奇数或偶数的公式 (Sum formulas for positive integers up to odd or even numbers) |
-| [连续整数乘积求和.ipynb](translated-notebooks/离散数学/数列与级数/连续整数乘积求和.ipynb)                                              | 连续倍数之和 (Sums of consecutive multiples)                                                |
-| [连续乘积倒数求和.ipynb](translated-notebooks/离散数学/数列与级数/连续乘积倒数求和.ipynb)                                              | 连续倍数倒数之和 (Sums of reciprocals of consecutive multiples)                             |
-| [等差数列求和.ipynb](translated-notebooks/离散数学/数列与级数/等差数列求和/等差数列求和.ipynb)                                         | 算术级数概念与公式 (Basic arithmetic sum concepts and formulas)                             |
-| [等差数列求和之广义化.ipynb](translated-notebooks/离散数学/数列与级数/等差数列求和/等差数列求和之广义化.ipynb)                         | 算术级数推广 (Generalizations of arithmetic sum formulas)                                   |
-| [立方和的等差数列之推导（压缩版）.ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的等差数列之推导（压缩版）.ipynb) | 立方数之和与算术级数 (压缩版) (Compressed version of sum of cubes using arithmetic sums)    |
-| [立方和的等差数列之推导.ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的等差数列之推导.ipynb)                     | 立方数之和与算术级数 (Sum of cubes using arithmetic sum formulas)                           |
-| [立方和的平方和之推导.ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的平方和之推导.ipynb)                         | 立方数之和与平方数之和的关系 (Relationship between sum of cubes and sum of squares)         |
-| [立方和的对称和之推导.ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的对称和之推导.ipynb)                         | 立方数之和与对称和 (Sum of cubes using symmetric sum approach)                              |
-| [平方和的等差数列之推导.ipynb](translated-notebooks/离散数学/数列与级数/平方数列求和/平方和的等差数列之推导.ipynb)                     | 平方数之和与算术级数 (Sum of squares using arithmetic sum formulas)                         |
-| [平方求和之对称之和.ipynb](translated-notebooks/离散数学/数列与级数/对称之和/平方求和之对称之和.ipynb)                                 | 平方数之和与对称和 (Sum of squares using symmetric sum approach)                            |
-| [偶数之对称之和.ipynb](translated-notebooks/离散数学/数列与级数/对称之和/偶数之对称之和.ipynb)                                         | 偶数对称和 (Symmetric approach to summing even numbers)                                     |
-| [奇数之对称之和.ipynb](translated-notebooks/离散数学/数列与级数/对称之和/奇数之对称之和.ipynb)                                         | 奇数对称和 (Symmetric approach to summing odd numbers)                                      |
-| [平方和的对称和之推导.ipynb](translated-notebooks/离散数学/数列与级数/平方数列求和/平方和的对称和之推导.ipynb)                         | 平方和的对称和之推导 (Derivation of sum of squares using symmetric sum)                     |
-
-† = Markdown-only notes (no notebook original)
+| Notebook | Description |
+|----------|-------------|
+| [三角形数与之求和.ipynb](translated-notebooks/离散数学/数列与级数/三角形数与之求和.ipynb) | 三角形数及其求和公式 (Triangular numbers and their sum formulas) |
+| [几何级数.ipynb](translated-notebooks/离散数学/数列与级数/等比数列求和.ipynb) | 几何级数概念与公式 (Geometric series concepts and formulas) |
+| [奇数之和为平方数.ipynb](translated-notebooks/离散数学/数列与级数/奇数之和是平方数.ipynb) | 奇数之和等于平方数的证明 (Proof that sum of odd numbers equals perfect squares) |
+| [偶数之和.ipynb](translated-notebooks/离散数学/数列与级数/偶数之和.ipynb) | 偶数之和公式 (Formulas for sum of even numbers) |
+| [正整数之和为奇数或偶数.ipynb](translated-notebooks/离散数学/数列与级数/等差数列求和/等差数列至奇数乃偶数之求和.ipynb) | 正整数之和为奇数或偶数的公式 (Sum formulas for positive integers up to odd or even numbers) |
+| [连续倍数之和.ipynb](translated-notebooks/离散数学/数列与级数/连续整数乘积求和.ipynb) | 连续倍数之和 (Sums of consecutive multiples) |
+| [连续倍数倒数之和.ipynb](translated-notebooks/离散数学/数列与级数/连续乘积倒数求和.ipynb) | 连续倍数倒数之和 (Sums of reciprocals of consecutive multiples) |
+| [算术级数.ipynb](translated-notebooks/离散数学/数列与级数/等差数列求和/等差数列求和.ipynb) | 算术级数概念与公式 (Basic arithmetic sum concepts and formulas) |
+| [算术级数推广.ipynb](translated-notebooks/离散数学/数列与级数/等差数列求和/等差数列求和之广义化.ipynb) | 算术级数推广 (Generalizations of arithmetic sum formulas) |
+| [立方数之和与算术级数 (压缩版).ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的等差数列之推导（压缩版）.ipynb) | 立方数之和与算术级数 (压缩版) (Compressed version of sum of cubes using arithmetic sums) |
+| [立方数之和与算术级数.ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的等差数列之推导.ipynb) | 立方数之和与算术级数 (Sum of cubes using arithmetic sum formulas) |
+| [立方数之和与平方数之和.ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的平方和之推导.ipynb) | 立方数之和与平方数之和的关系 (Relationship between sum of cubes and sum of squares) |
+| [立方数之和与对称和.ipynb](translated-notebooks/离散数学/数列与级数/立方数列求和/立方和的对称和之推导.ipynb) | 立方数之和与对称和 (Sum of cubes using symmetric sum approach) |
+| [平方数之和与算术级数.ipynb](translated-notebooks/离散数学/数列与级数/平方数列求和/平方和的等差数列之推导.ipynb) | 平方数之和与算术级数 (Sum of squares using arithmetic sum formulas) |
+| [平方数之和与对称和.ipynb](translated-notebooks/离散数学/数列与级数/对称之和/平方求和之对称之和.ipynb) | 平方数之和与对称和 (Sum of squares using symmetric sum approach) |
+| [偶数对称和.ipynb](translated-notebooks/离散数学/数列与级数/对称之和/偶数之对称之和.ipynb) | 偶数对称和 (Symmetric approach to summing even numbers) |
+| [奇数对称和.ipynb](translated-notebooks/离散数学/数列与级数/对称之和/奇数之对称之和.ipynb) | 奇数对称和 (Symmetric approach to summing odd numbers) |
+| [平方和的对称和之推导.ipynb](translated-notebooks/离散数学/数列与级数/平方数列求和/平方和的对称和之推导.ipynb) | 平方和的对称和之推导 (Derivation of sum of squares using symmetric sum) |
 
 ## Usage
 
