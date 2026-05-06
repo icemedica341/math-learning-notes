@@ -1,0 +1,83 @@
+name: Translate Notebooks to Chinese
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.ipynb"
+      - "!archive/**"
+      - "translate_notebooks.py"
+      - ".github/workflows/translate-notebooks.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**/*.ipynb"
+      - "!archive/**"
+      - "translate_notebooks.py"
+      - ".github/workflows/translate-notebooks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: translate-notebooks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install nbformat requests
+
+      - name: Determine notebooks to translate
+        id: notebooks
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          NOTEBOOK_LIST=.changed-notebooks.txt
+          : > "$NOTEBOOK_LIST"
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            find . -type f -name '*.ipynb' -not -path './translated-notebooks/*' -not -path './archive/*' | sed 's|^\./||' | sort > "$NOTEBOOK_LIST"
+          elif [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}" -- '*.ipynb' ':(exclude)translated-notebooks/**' ':(exclude)archive/**' | sort > "$NOTEBOOK_LIST"
+          elif [[ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]]; then
+            find . -type f -name '*.ipynb' -not -path './translated-notebooks/*' -not -path './archive/*' | sed 's|^\./||' | sort > "$NOTEBOOK_LIST"
+          else
+            git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- '*.ipynb' ':(exclude)translated-notebooks/**' ':(exclude)archive/**' | sort > "$NOTEBOOK_LIST"
+          fi
+
+          NOTEBOOK_COUNT="$(grep -c . "$NOTEBOOK_LIST" || true)"
+          echo "count=$NOTEBOOK_COUNT" >> "$GITHUB_OUTPUT"
+          echo "file_list=$NOTEBOOK_LIST" >> "$GITHUB_OUTPUT"
+          echo "Selected notebooks:"
+          cat "$NOTEBOOK_LIST" || true
+
+      - name: Translate Notebooks
+        env:
+          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+        run: |
+          python translate-notebooks.py  # Translation script
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
+          git add .
+          git commit -m "Translate notebooks to Chinese"
+          git checkout -b translated # Create a new branch called 'translated'
+          git push origin translated # Push to the 'translated' branch
