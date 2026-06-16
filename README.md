@@ -7,7 +7,6 @@ Repository for mathematics learning notes in Jupyter Notebook format, covering t
 - [Overview](#overview)
 - [Installation](#installation)
 - [Notes](#notes)
-  - [Root Directory Notes](#root-directory-notes)
   - [Algebra](#algebra)
   - [Calculus](#calculus)
   - [Discrete Mathematics](#discrete-mathematics)
@@ -41,18 +40,13 @@ pip install jupyter numpy matplotlib sympy ipywidgets
 
 ## Notes
 
-### Root Directory Notes
-
-| Note                                     | Description                                                                      |
-| ---------------------------------------- | -------------------------------------------------------------------------------- |
-| [Math-Lessons.ipynb](Math-Lessons.ipynb) | Main notebook with comprehensive math lessons compiled from previous Google Docs |
-
 ### Algebra
 
-| Note                                                                         | Description                                |
-| ---------------------------------------------------------------------------- | ------------------------------------------ |
-| [general-properties.ipynb](algebra/general-properties.ipynb)                 | General properties of algebraic operations |
-| [quadratic-slide-and-divide.ipynb](algebra/quadratic-slide-and-divide.ipynb) | AC method of quadratic factorisation       |
+| Note                                                                         | Description                                   |
+| ---------------------------------------------------------------------------- | --------------------------------------------- |
+| [Math-Lessons.ipynb](algebra/Math-Lessons.ipynb)                             | Main notebook with comprehensive math lessons |
+| [general-properties.ipynb](algebra/general-properties.ipynb)                 | General properties of algebraic operations    |
+| [quadratic-slide-and-divide.ipynb](algebra/quadratic-slide-and-divide.ipynb) | AC method of quadratic factorisation          |
 
 ### Calculus
 
