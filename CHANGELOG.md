@@ -65,4 +65,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-For a complete list of individual commits, see the [git log](https://github.com/icemedica341/Math-Learning-Notes/commits/main).
+For a complete list of individual commits, see the [git log](https://github.com/icemedica341/math-learning-notes/commits/main).
