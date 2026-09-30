@@ -100,7 +100,7 @@ h is the perpendicular distance from one side to the other
 
 | Property   | Formula             |
 |------------|---------------------|
-| Area       | $lh$ or   $12pq$     |
+| Area       | $lh$ or   $\frac{1}{2}pq$     |
 | Perimeter  | $4l$                |
 
 - A rhombus can be taken as a special case of parallelograms where all of its sides are equal
@@ -122,7 +122,7 @@ h is the perpendicular distance from one side to the other
 
 | Property   | Formula                         |
 |------------|---------------------------------|
-| Area       | $r^2$                            |
+| Area       | $\pi r^2$                            |
 | Perimeter  | $2r \pi$ or expressed as$D\pi$    |
 
 - Proving this will require Calculus, or at least Limits
@@ -169,7 +169,7 @@ r is the radius of its great circle
 | Property      | Formula                                  |
 |---------------|------------------------------------------|
 | Volume        | $\dfrac{1}{3} (\text{Base} \times \text{Height})$ |
-| Surface Area  | $2 (\text{Base} \times \text{Height}) \space + \space \text{Base}$         |
+| Surface Area  | $\text{Base} + \frac{1}{2}Pl \space (\text{$P$ base perimeter, $l$ slant height})$         |
 
 ##### Cylinder
 
@@ -179,7 +179,7 @@ r is the radius of its great circle
 
 | Property      | Formula                                            |
 |---------------|----------------------------------------------------|
-| Volume        | $2 (\text{Base} \times \text{Height})$      |
+| Volume        | $\text{Base} \times \text{Height}$      |
 | Surface Area  | $2 \pi r (r + h)$  or represented as $2 \pi r (r + h)$  |
 
 - Volume is simply base x height here
@@ -267,7 +267,7 @@ $$
 \begin{align}
 &\dfrac{\pi}{180} \cdot \space \text{Degrees} = \text{Radians} \\
 \\
-&\dfrac{180}{\pi} \cdot \space \text{Degrees} = \text{Radians} \\
+&\dfrac{180}{\pi} \cdot \space \text{Radians} = \text{Degrees} \\
 \end{align}
 $$
 

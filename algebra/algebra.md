@@ -35,7 +35,7 @@ This is one way to depict repeated multiplication, we will explore constant base
 - Simplify the terms between numerator and denominator
 
 $$
-(2a^3b)^{-2} \left(\frac{3a^{-1}b}{18a^5b}\right) = \frac{4a^{-4} \cdot 3a^{-1}b}{18a^5b} = \frac{4a^6 \cdot 3b^3}{18a^5b^a} = \frac{2b^3}{3}
+(2a^3b)^{-2} \left(\frac{3a^{-1}b}{18a^5b}\right) = \frac{1}{4a^6b^2} \cdot \frac{1}{6a^6} = \frac{1}{24a^{12}b^2}
 $$
 
 ---
@@ -115,7 +115,7 @@ $$
 $$
 
 > Where $x_1$ and $x_2$ are roots
-> $\dfrac{b}{a} = x_1 + x_2$
+> $\dfrac{b}{a} = -(x_1 + x_2)$
 >
 > $\dfrac{c}{a} = x_1x_2$
 
@@ -494,7 +494,7 @@ $$
 \huge{y = ax^2 + bx + c}
 $$
 
-- Slope is $a$
+- Slope varies along the curve as $2ax+b$ (it is not a constant $a$)
 - ***y***-intercept is $c$
 - Solve for when $y=0$ to find its roots
 - Take note of the shape of graphs before sketching, or plot points to sketch them
@@ -608,7 +608,7 @@ $$
 
 - U-Curve
 - $a$ determines if the curve is gonna be very steep or gentle
-- $\dfrac{c - b^2}{4a}$ determines its vertex, specifically the $x$ part of the vertex
+- $-\dfrac{b}{2a}$ determines its vertex, specifically the $x$ part of the vertex (the $y$ part is $\dfrac{4ac - b^2}{4a}$)
   - If there is no $b$, the vertex stays at $(0,c)$
 - $c$ determines where the curve intercepts the ***y***-axis
 - Find its roots
@@ -626,7 +626,7 @@ $$
 #### Odd Radicals
 
 $$
-\large{y = nx}
+\large{y = \sqrt[n]{x}}
 $$
 > Where $n$ is not a multiple of $2$
 
@@ -721,7 +721,7 @@ $$
 > $a$ is the distance between the centre and the vertex of the $x$-axis
 > $b$ is the distance between the centre and the vertex of the $y$-axis
 
-- Sum of any point on the hyperbola to the 2 foci is constant
+- Sum of any point on the ellipse to the 2 foci is constant
 - Simply rearrange the equation to look like this and you are set
 - Leverage [[#Completing the Square |Completing the Square ]] if required
 
@@ -946,7 +946,7 @@ $$
 - However, the rest of the graph might not actually follow the shape all too closely as you might experience with graphs that has even-powered terms as the highest degree
 - Find its factors to get the roots. Check [[#Quadratic Equations | Quadratic Equations]]
 - Write the roots in pencil under/above each factor for easy reference
-- Annotate those roots with even-powered factors because the polarity of a graph changes across that root (i.e. it crosses the ***x***-axis to the other side).  Check out [[#Parity Power Check | Parity Power Check]]
+- Annotate those roots with odd-powered factors because the polarity of a graph changes across that root (i.e. it crosses the ***x***-axis to the other side).  Check out [[#Parity Power Check | Parity Power Check]]
 - To find the side of y the graph starts from use [[#Leading Term Analysis With Limit Testing | Leading Term Analysis With Limit Testing]]
 - With all these tools at hand you ready to draw a roughly similar looking graph without needing to add more random points
 
@@ -1073,13 +1073,14 @@ Similarly for the 2nd example,
 $$
 \begin{align}
 \dfrac{4x^3 + 16x + 7}{x^2 + 4}^2
-&= \dfrac{Ax + B}{x^2 + 4} + \dfrac{Bx + C}{(x^2+4)^2} \\
+|&= \dfrac{Ax + B}{x^2 + 4} + \dfrac{Cx + D}{(x^2+4)^2} \\
+|&= \dfrac{(Ax + B)(x^2 + 4) + (Cx + D)}{(x^2 + 4)^2}
 &= \dfrac{(Ax + B)(x^2 + 4) + (Bx + C)}{(x^2 + 4)^2}
 \end{align}
 $$
 
 $$
-4x^3 + 16x + 7 = (Ax + B)(x^2 + 4) + (Bx + C)
+4x^3 + 16x + 7 = (Ax + B)(x^2 + 4) + (Cx + D)
 $$
 
 Now this is where comparing term coefficients is way faster,
@@ -1090,7 +1091,7 @@ Now this is where comparing term coefficients is way faster,
  > - To find $A$, compare terms with $x^3$ , we get $A=4$
  > - To find $B$, compare terms with $x^2$ , we get $B=0$
  > - To find $C$, compare terms with $x$ , we get
- > $C + 4A = 16 \Rightarrow C + 0 = 16 \Rightarrow C = 16$
+ > $C + 4A = 16 \Rightarrow C + 16 = 16 \Rightarrow C = 0$
  > - To find $D$, compare constants , we get
  > $D + 4B = 7 \Rightarrow D + 4(0) \Rightarrow 7 \Rightarrow D = 7$
 
@@ -1226,7 +1227,7 @@ $$
 
 $e^x$ is the only expression that represents continuous growth, as in, **it grows at the same rate as its current state**.
 
-- It just happens to be any power of this number $2.18281828459045\cdots$  that was shortened to $e$
+- It just happens to be any power of this number $2.718281828459045\cdots$  that was shortened to $e$
 - It is also called the **Natural Number** because we find that things in nature grows roughly around this rate as well
 - So, in questions where we find ourselves finding what is the change of something in nature (i.e. bacteria growth, population growth, radioactive decay), we can reliably model it with some power of $e$, where we seek to find what power that is.
 

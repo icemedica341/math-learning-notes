@@ -116,7 +116,7 @@ denominator radicands can't be equal to zero
 
 #### Equivalence Relation
 
-$\large{\text{If} \space f(a)=f(b), \space \text{then} \space a=b}$
+$\large{\text{If $f$ is one-to-one and} \space f(a)=f(b), \space \text{then} \space a=b}$
 
 Write down restrictions for equations and check whether solutions are correct in this situations
 
@@ -241,7 +241,7 @@ Thus resulting in **no net change**
 
 While solving an algebraic equation, very often we might get 2 fractions equalling each other.
 
-$\dfrac{2x}{x+1} = \dfrac{2x-1}{x}$ where $x \ne 1$, $x \ne 0$
+$\dfrac{2x}{x+1} = \dfrac{2x-1}{x}$ where $x \ne -1$, $x \ne 0$
 
 - If you don’t understand why we need to have these conditions every time we solve an equation with fractions, look [[#Solving Equations with Fractions | here]]
 
@@ -291,7 +291,7 @@ x &= 1
 \end{align}
 $$
 
-Luckily, $x = 1$ does not violate  $x \ne 1$, $x \ne 0$. Therefore, it is a solution!
+Luckily, $x = 1$ does not violate  $x \ne -1$, $x \ne 0$. Therefore, it is a solution!
 
 **Conclusion**
 Now you know why the cross-multiplication trick works, it is because of pattern spotting done on that original process, and optimising it and it happened to be very intuitive.
@@ -332,8 +332,8 @@ However, $\log_b{p} \in \mathbb{R}$  , since any power is possible
 
 #### Restrictions of Trigonometric Functions
 
-$-1 \le \sin{x} \le 1 \space ————— \space \sec{x} \le -1 , \sec{x} \ge 1$
-$-1 \le \cos{x} \le 1 \space ————— \space \csc{x} \le -1 , \csc{x} \ge 1$
+$-1 \le \sin{x} \le 1 \space ————— \space \csc{x} \le -1 , \csc{x} \ge 1$
+$-1 \le \cos{x} \le 1 \space ————— \space \sec{x} \le -1 , \sec{x} \ge 1$
 
 #### Parameters and Variables
 
